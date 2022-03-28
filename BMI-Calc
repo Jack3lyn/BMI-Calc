@@ -1,0 +1,12 @@
+weight = 60
+#weight in kg
+height+1.7
+BMI= weight/height**2
+print(BMI)
+
+if BMI >=25:
+  print('Overweight')
+elif 18.5 <= BMI < 25
+  print('Healthy')
+elif BMI <18.5
+  print('Underweight)
