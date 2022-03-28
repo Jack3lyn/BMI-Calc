@@ -1,6 +1,6 @@
-weight = 
+weight = 78
 #weight in kg
-height= 
+height= 1.8
 #height in m
 BMI= weight/height**2
 print(BMI)
@@ -12,6 +12,9 @@ if BMI >=25:
 elif 18.5 <= BMI < 25:
   print('Healthy')
   print('You are in the healthy BMI range')
+  diff_low = BMI - 18.5
+  diff_high = 25 - BMI
+  print('You are', diff_low, 'kg away from being underweight and', diff_high, 'kg away from being overweight')
 elif BMI <18.5:
   print('Underweight')
   diff = 18.5 - BMI
