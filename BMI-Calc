@@ -7,15 +7,15 @@ print(str(round(BMI, 1)))
 
 if BMI >=25:
   print('Overweight')
-  diff = str(round(BMI - 25, 1))
+  diff = str(round((BMI - 25)*height**2, 1))
   print('You need to lose', diff, 'kg to be in the healthy BMI range')
 elif 18.5 <= BMI < 25:
   print('Healthy')
   print('You are in the healthy BMI range')
-  diff_low = str(round(BMI - 18.5, 1))
-  diff_high = str(round(25 - BMI, 1))
+  diff_low = str(round((BMI - 18.5)*height**2, 1))
+  diff_high = str(round((25 - BMI)*height**2, 1))
   print('You are', diff_low, 'kg away from being underweight and', diff_high, 'kg away from being overweight')
 elif BMI <18.5:
   print('Underweight')
   diff = str(round(18.5 - BMI, 1))
-  print('You need to gain', diff, 'kg to be in the healthy BMI range')
+  print('You need to gain', diff*height**2, 'kg to be in the healthy BMI range')
