@@ -1,6 +1,6 @@
-weight = int(input("What is your weight? "))
+weight = int(input("What is your weight in kg? "))
 #weight in kg
-height= float(input("How tall are you? "))
+height= float(input("How tall are you in m? "))
 #height in m
 BMI= weight/height**2
 print(str(round(BMI, 1)))
